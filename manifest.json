@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "GitHub Enhancement",
+    "description": "Enhances GitHub!",
+    "version": "0.1",
+    "permissions": [
+        "https://github.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["assets/js/app.js"]
+        }
+    ]
+}
